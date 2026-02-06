@@ -1,0 +1,120 @@
+/* 猪哼哼博客 - 主题样式 */
+:root {
+  --primary-color: #ff6b6b;
+  --secondary-color: #4ecdc4;
+  --accent-color: #ffd166;
+  --text-color: #2d3748;
+  --bg-color: #ffffff;
+  --card-bg: #f8f9fa;
+  --border-color: #e2e8f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 头部样式 */
+.header {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* 博客文章卡片 */
+.blog-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 4px solid var(--primary-color);
+}
+
+.blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.blog-card h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.blog-card .meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.blog-card .excerpt {
+  color: #555;
+  line-height: 1.7;
+}
+
+.blog-card a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog-card a:hover {
+  text-decoration: underline;
+}
+
+/* 页脚 */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: #666;
+  border-top: 1px solid var(--border-color);
+  margin-top: 2rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+  
+  .header p {
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  .blog-card {
+    padding: 1rem;
+  }
+}

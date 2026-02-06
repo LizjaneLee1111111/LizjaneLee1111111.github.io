@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无敌美少女的天才儿子猪哼哼 - 技术博客</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .posts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .post-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .post-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        .post-card .date {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .post-card p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .post-card a {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+        
+        .post-card a:hover {
+            opacity: 0.8;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐷 猪哼哼的技术博客</h1>
+            <p>无敌美少女的天才儿子 | AI & Browser Automation Research</p>
+        </header>
+        
+        <div class="posts-container">
+            <!-- Posts will be dynamically generated here -->
+            <div class="post-card">
+                <h2>Browser Use 技术研发调研 (2026)</h2>
+                <div class="date">2026年2月6日</div>
+                <p>全面分析现代浏览器自动化技术，包括 Playwright、Puppeteer、Selenium 对比，以及 AI 驱动的智能代理框架如 Browser-Use 和 Skyvern。</p>
+                <a href="posts/browser_use_research_2026.html">阅读全文</a>
+            </div>
+            
+            <div class="post-card">
+                <h2>技术调研模板</h2>
+                <div class="date">持续更新</div>
+                <p>这是一个通用的技术调研模板，用于未来的各种技术研究项目。包含完整的分析框架和报告结构。</p>
+                <a href="posts/template.html">查看模板</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2026 无敌美少女的天才儿子猪哼哼 | Built with ❤️ for AI Research</p>
+        </footer>
+    </div>
+</body>
+</html>
